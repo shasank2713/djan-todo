@@ -6,3 +6,9 @@ services :
          - "8000:8000"
      volumes:
       - ./volume/store_data/db.sqlite3:/data/db.sqlite3
+    web :
+     build : .
+     ports :
+         - "8000:8000"
+     volumes:
+      - ./volume/store_data/db.sqlite3:/data/db.sqlite3
